@@ -1,0 +1,45 @@
+body{
+    height: 120vh ; /*برای اسکرول صفحه*/
+}
+
+.parent-reletive-box{
+   
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(250, 102, 238);
+    left: 3em; /* 1em = 16px  default*/
+    padding: 10px 7px 7px 7px;
+    z-index: 0; /*زیرترین باکس*/
+}
+
+
+.child-absolute-box1{
+    font-family: 'Courgette', cursive;
+    font-size: 14px;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    z-index: 2; /*جلوترین باکس*/
+    bottom: 40%;
+    left: 20%;
+    top: 50%;
+    background-color: rgb(255, 200, 232);
+    padding: 10px 7px 7px 7px;
+
+}
+
+.child-absolute-box2{
+    position: absolute;
+    font-family: 'Wire One', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    height: 200px;
+    width: 500px;
+    left: 40%;
+    top: 90%;
+    background-color: rgb(176, 60, 170);
+    padding: 5px 7px 7px 7px;
+
+}
+
