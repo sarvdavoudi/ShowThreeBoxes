@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- import font1 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-    
-    <!-- import font2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- import font1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- import font2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet" />
 
     <!-- import font3 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet" />
 
     <!-- ******************* -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>show3Box</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parent-reletive-box">
+      <p>
+        this box is relatively positioned and scooted to the right by 3em -its location is based from where it would be if it were in the normal flow
+        in the document. here the normal flow of the document is right under the paragraph below. since the paragraph doesn't have positioning. this
+        position is based off of the body itself.
+      </p>
+      <!-- absolute boxes should be place in child code -->
+      <div class="child-absolute-box1">
         <p>
-            this box is relatively positioned and scooted to the right by 3em -its location is based from where it would be if it
-            were in the normal flow in the document. here the normal flow of the document is right under the paragraph below. since
-            the paragraph doesn't have positioning. this position is based off of the body itself.
+          this box is absolutely positioned in relation to the relatively positioned box above. this box is also pulled out of the normal flowof the
+          document , so it can be z-indexed above other elements. right now this box is set to offset by 19em from the top of the parent box and 3em
+          off the left side . what would happen if we set top to 0
         </p>
+      </div>
 
-        
-
-        <div class="child-absolute-box1">
-            <p>
-                this box is absolutely positioned in relation to the relatively positioned box above. this box is also pulled out of the
-                normal flowof the document , so it can be z-indexed above other elements. right now this box is set to offset by 19em
-                from the top of the parent box and 3em off the left side . what would happen if we set top to 0
-            </p>
-
-        </div>
-
-        <div class="child-absolute-box2">
-            <p>Laborum Lorem id fugiat eu ut. Reprehenderit enim quis ex dolor esse proident aute reprehenderit anim et esse aliqua
-                culpa aliqua. Ipsum cillum laborum consectetur deserunt in nostrud est. Aliqua aliquip ut cupidatat enim anim
-                cupidatat. Proident exercitation ad amet veniam.
-            
-                Pariatur commodo dolore quis incididunt exercitation. Tempor sunt ex laboris nulla culpa reprehenderit sit minim
-                labore sunt quis id ad non. Proident sit nostrud ea ut ipsum aliquip amet duis anim id consectetur in cillum.
-                Pariatur commodo dolore quis incididunt exercitation. Tempor sunt ex laboris nulla culpa reprehenderit sit minim
-                labore sunt quis id ad non. Proident sit nostrud ea ut ipsum aliquip amet duis anim id consectetur in cillum.
-            
-            </p>
-
-        </div>
+      <div class="child-absolute-box2">
+        <p>
+          Laborum Lorem id fugiat eu ut. Reprehenderit enim quis ex dolor esse proident aute reprehenderit anim et esse aliqua culpa aliqua. Ipsum
+          cillum laborum consectetur deserunt in nostrud est. Aliqua aliquip ut cupidatat enim anim cupidatat. Proident exercitation ad amet veniam.
+          Pariatur commodo dolore quis incididunt exercitation. Tempor sunt ex laboris nulla culpa reprehenderit sit minim labore sunt quis id ad non.
+          Proident sit nostrud ea ut ipsum aliquip amet duis anim id consectetur in cillum. Pariatur commodo dolore quis incididunt exercitation.
+          Tempor sunt ex laboris nulla culpa reprehenderit sit minim labore sunt quis id ad non. Proident sit nostrud ea ut ipsum aliquip amet duis
+          anim id consectetur in cillum.
+        </p>
+      </div>
     </div>
- </body>
+  </body>
 </html>
